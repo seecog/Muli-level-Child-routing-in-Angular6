@@ -1,0 +1,10 @@
+<table class="table">
+<th>Pic</th><th>Name</th><th>Cost</th>
+<tr *ngFor="let y of items">
+<td>
+<img [src]="y.pic" width="100" height="100">
+</td>
+<td>{{y.name}}</td>
+<td>{{y.cost}}</td>
+</tr>
+</table>

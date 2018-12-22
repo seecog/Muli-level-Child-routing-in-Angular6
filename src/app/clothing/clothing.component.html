@@ -1,0 +1,11 @@
+
+<h1>Clothing section</h1>
+<ul class="list-inline">
+    <li class="list-inline-item" *ngFor="let x of list">
+ <!--   <img [src]="x.pic" width=60 height=60>-->
+    <a class="btn btn-primary" [routerLink]="['brand',x.id]">{{x.name}}</a>
+    </li>
+  </ul>
+
+  <hr>
+  <router-outlet></router-outlet>

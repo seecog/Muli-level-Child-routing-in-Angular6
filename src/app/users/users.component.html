@@ -1,0 +1,14 @@
+<p>
+  Users List
+</p>
+
+<br>
+<ul>
+<li *ngFor="let x of users">
+<a [routerLink]="['info',x.id]">
+{{x.first_name}} {{x.last_name}}
+</a>
+</li>
+</ul>
+<hr>
+<router-outlet></router-outlet>

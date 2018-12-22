@@ -1,0 +1,10 @@
+
+<ul class="list-inline">
+    <li class="list-inline-item" *ngFor="let x of collections[0].items">
+ <!--   <img [src]="x.pic" width=60 height=60>-->
+    <a class="btn btn-primary" [routerLink]="['items',x.id]">{{x.name}}</a>
+    </li>
+  </ul>
+
+  <hr>
+  <router-outlet></router-outlet>
